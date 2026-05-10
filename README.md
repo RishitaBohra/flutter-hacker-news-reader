@@ -1,16 +1,73 @@
-# hacker_news_reader
+# Hacker News Reader
 
-A new Flutter project.
+A Flutter-based Hacker News Reader app built using Clean Architecture and Riverpod.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+* Top Stories Feed
+* Story Detail Screen
+* Nested Comments
+* Pull To Refresh
+* Hacker News Styled UI
+* URL Launching
+* Recursive Comment Rendering
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* Flutter
+* Riverpod
+* Dio
+* GoRouter
+* Clean Architecture
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## API Used
+
+* https://hacker-news.firebaseio.com/v0/topstories.json
+* https://hacker-news.firebaseio.com/v0/item/<id>.json
+
+## Folder Structure
+
+```txt
+lib/
+├── core/
+├── features/
+├── routes/
+└── main.dart
+```
+
+## Run Project
+
+```bash
+flutter pub get
+flutter run
+```
+
+## Screens
+
+### Home Screen
+
+Displays top Hacker News stories with:
+
+* Title
+* Domain
+* Score
+* Author
+* Comment Count
+
+### Detail Screen
+
+Displays:
+
+* Story details
+* Nested comments
+* Recursive replies
+* Open article functionality
+
+## Architecture
+
+This project follows Clean Architecture principles with:
+
+* Data Layer
+* Presentation Layer
+* Repository Pattern
+* Riverpod State Management
